@@ -1,0 +1,73 @@
+body {
+	font-family: "Garamond", Times, serif;
+	color: black;
+ }
+ 
+ a {
+	color: black;
+}
+
+a::after {
+	content: " (" attr(href) ")";
+}
+
+a:not([href^="http"])::after {
+	content: " (https://40px.us/i4/9/" attr(href) ")";
+}
+
+.media {
+  display: none;
+}
+
+.media::after {
+    content: " [Media URL: " attr(data-url) "]";
+}
+
+a[href^="#"], nav, .no-print, img, .banner a, button {
+	display: none;
+}
+
+.banner, .site-footer {
+	padding: 1em;
+}
+
+.banner h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 150%;
+}
+
+.banner, main, .sidebar {
+	border-bottom: 1px dashed black;
+}
+
+table {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+tbody td:first-child {
+	font-style: italic;
+}
+
+td {
+	padding: 5px;
+	border: 1px solid black;
+}
+
+tfoot td {
+	text-align: center;
+	font-style: italic;
+}
+
+main ul ul li {
+list-style-type: circle;
+}
+
+main ul {
+	list-style-type: disc;
+}
+
+
+

@@ -1,0 +1,291 @@
+/* --- Global Styling --- */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: "Garamond", Times, serif;
+	line-height: 1.8;
+ }
+ 
+ body a {
+	color: #006400;
+}
+
+body a:hover {
+	color: #FFB90F;
+	background-color: #68228B;
+}
+
+/* --- Default Layout Styling --- */
+
+.banner {
+	background-color: #E0E0E0;
+	border-bottom: 2px solid #68228B;
+	padding: 1em;
+}
+
+.banner img {
+	position: relative;
+	max-width: 100%;
+	height: auto;
+}
+
+.banner h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 200%;
+	color: #68228B;
+}
+
+h2, h3 {
+	color: #68228B;
+}
+
+.latin {
+	font-style: italic;
+}
+
+main {
+	padding: 1em;	
+}
+
+iframe {
+   border: 0;
+}
+
+button {
+	font-family: "Garamond", Times, serif;
+	font-weight: bold;
+	font-size: 16pt;
+	color: #68228B;
+	background-color: #EEE5DE;
+	border: 2px solid #68228B;
+	margin: 1em;
+	height: 4em;
+	width: 75%;
+}
+
+.sidebar {
+	padding: 2em;
+	background-color: #EEE5DE;
+}
+
+.site-footer {
+	min-height: 6em;
+	background-color: #E0E0E0;
+	border-top: 2px solid #68228B;
+	padding: 1em;
+}
+
+.slogan {
+	float: right;
+	font-weight: bold;
+	font-family: Lucida Handwriting, Brush Script MT, fantasy;
+	color: #68228B;
+}
+
+.copyright {
+	float: left;
+	color: #68228B;
+	font-weight: bold;
+}
+
+/* --- Navigation Menu --- */
+
+.site-menu ul {
+	display: block;
+	text-align: center;
+	list-style-type: none;
+}
+	
+.site-menu a {
+	padding: 4px;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+/* --- Responsive Media Styling --- */
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.media {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+}
+
+.media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Table Styling --- */
+
+table {
+	width: 100%;
+	border: 1px solid #EBEBEB;
+	border-collapse: collapse;
+	margin-bottom: 5em;
+}
+
+caption {
+	font-weight: bold;
+}
+
+th {
+	text-align: left;
+	padding: 5px;
+	color: #68228B;
+	background: #EEE5DE;
+	border-bottom: 2px dashed #68228B;
+}
+
+tbody tr:nth-child(even) {
+  background: #F2F2F2;
+}
+
+tbody td:first-child {
+	font-weight: bold;
+}
+
+td {
+	padding: 5px;
+	border: 1px solid #EBEBEB;
+}
+
+tfoot td {
+	text-align: center;
+	font-style: italic;
+}
+
+/* --- List Styling --- */
+
+main ul ul li {
+	list-style-type: circle;
+}
+
+main ul {
+	list-style-type: disc;
+}
+
+/* --- Form Styling --- */
+
+form label {
+	font-weight: bold;
+	font-size: 14pt;
+	display: block;
+	padding: .3em;
+}
+
+form legend {
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+form fieldset {
+	border: none;
+}
+
+form fieldset label {
+	display: inline-block;
+	text-align: center;
+	font-weight: normal;
+	font-size: 14pt;
+}
+
+form input[type="text"] {
+	width: 75%;
+	border: 1px solid #68228B;
+	padding: .5em;
+	margin: .5em;
+}
+
+form select {
+	padding: .3em 1em;
+	margin-left: 1.5em;
+	font-family: "Garamond", Times, serif;
+	font-size: 14pt;
+	border: 1px solid #68228B;
+}
+
+form textarea {
+	width: 100%;
+	height: 5em;
+	border: 1px solid #68228B;
+	margin: .5em;
+	resize: none;
+}
+
+form input[type="submit"] {
+	font-family: "Garamond", Times, serif;
+	font-weight: bold;
+	font-size: 14pt;
+	color: #68228B;
+	background-color: #EEE5DE;
+	border: 2px solid #68228B;
+	height: 3em;
+	width: 75%;
+	margin: .5em;
+}
+
+/* --- Desktop Layout Styling --- */
+
+@media (min-width: 768px) {
+	body {
+		font-size: 110%;
+	}
+	
+	button {
+		height: 2em;
+	}
+	
+	.banner {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	}
+	
+	.banner h1 {
+	font-size: 250%;
+	}
+	
+	.site-menu ul {
+		display: flex;
+		list-style-type: none;
+	}
+	
+	.site-menu a {
+		margin: 10px;
+	}
+
+	.site-footer h4 {
+		font-size: 100%;
+}
+	
+	.wrapper {
+		overflow: hidden;
+		max-width: 1400px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+	
+	main {
+	padding: 2em;	
+	}
+}
